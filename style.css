@@ -1,0 +1,295 @@
+body {
+  background-color: #282f49;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Karla', sans-serif;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+}
+@keyframes moveHead {
+  25% {
+      transform: translateY(5px);
+  }
+  50% {
+      transform: translateY(0px);
+  }
+  75% {
+      transform: translateY(-4px);
+  }
+}
+@keyframes bigEyes {
+  50% {
+      transform: scale(1.1);
+  }
+}
+@keyframes bigBlush {
+  50% {
+      transform: scale(1.4);
+  }
+}
+@keyframes showText {
+  50% {
+      opacity: 0;
+  }
+}
+g#ho11_1_, 
+g#ho1_1_ {
+  animation: showText 1.5s linear infinite normal;
+}
+g#ho10_1_ {
+  animation: showText 1.5s 0.5s linear infinite normal;
+}
+g#ho8_1_, g#ho7_1_, g#ho2_1_{
+  animation: showText 2s 0.25s linear infinite normal;
+}
+g#ho6_1_,
+g#ho9_1_,
+g#ho3_1_ {
+  animation: showText 1s 0.55s linear infinite normal;
+}
+g#ho4_1_,
+g#ho5_1_ {
+  animation: showText 0.95s 0.65s linear infinite normal;
+}
+path#XMLID_125_,
+path#XMLID_124_,
+circle#XMLID_122_ {
+  animation: bigEyes 2s linear infinite normal;
+  transform-origin: center center;
+}
+circle#XMLID_121_,
+circle#XMLID_120_ {
+  animation: bigBlush 2s linear infinite normal;
+  transform-origin: center center;
+}
+g#head_1_ {
+  animation: moveHead 0.7s linear infinite normal;
+}
+.image-container,
+.wishes-container {
+  display: inline-block;
+  float: left;
+  width: 40vw;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container svg {
+width: 100%;
+}
+
+.clearfix::before,
+.clearfix::after {
+content: ' ';
+display: table;
+}
+
+.clearfix::after {
+clear: both; 
+}
+
+h3 {
+  text-align: center;
+  color: #10172b;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.pink {
+  position: relative;
+  z-index: 1;
+  margin: 0 7px;
+  text-shadow: 2px 2px 0px rgb(189, 88, 107);
+}
+.pink:before {
+  background: #ED839C;
+  content: "";
+  position: absolute;
+  width: calc(100% + 15px);
+  height: 50px;
+  bottom: -6px;
+  left: -6px;
+  z-index: -1;
+}
+.btn {
+  padding: 13px 45px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  background: #ED839C;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 60px;
+  color: #10172b;
+  border-radius: 35px;
+  -webkit-box-shadow: 40px 40px 73px -6px rgba(0, 14, 31, 0.83);
+  -moz-box-shadow: 40px 40px 73px -6px rgba(0, 14, 31, 0.83);
+  box-shadow: 40px 40px 73px -6px rgba(0, 14, 31, 0.83);
+  transition: all .2s ease-in-out;
+}
+.btn:hover {
+  background: #10172b;
+  color: #fff;
+}
+
+p {
+  bottom: 10px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  left: 40vw;
+  font-size: 0.8rem; 
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  margin-top: 70px;
+  opacity: 0.5;
+  color: #95a3cb;
+}
+
+.social {
+fill: #5e6989;
+}
+
+.fb {
+margin-left: 6px;
+}
+
+.social-media {
+position: fixed;
+left: 30px;
+bottom: 30px;
+z-index: 10;
+
+}
+.social-media svg {
+display: block;
+margin-top: 35px;
+}
+
+.st0 {
+  fill: #161F38;
+}
+.st1 {
+  fill: #ED839C;
+}
+.st2 {
+  fill: #FFFFFF;
+}
+.st3 {
+  fill: none;
+  stroke: #CE6E80;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st4 {
+  fill: #282F49;
+}
+.st5 {
+  fill: #EDCFBC;
+}
+.st6 {
+  fill: none;
+  stroke: #0A1B44;
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.st7 {
+  fill: #CE6E80;
+}
+.st8 {
+  fill: #EAA292;
+}
+.st9 {
+  fill: #EA92A1;
+}
+.st10 {
+  fill: none;
+  stroke: #CE6E80;
+  stroke-width: 6;
+  stroke-miterlimit: 10;
+}
+
+.tweet {
+margin-top: 20px;
+display: inline-block;
+}
+
+.tweet a span {
+border-bottom: 2px solid;  
+transition: all 0.1s ease-in-out;
+}
+
+.tweet a:hover span {
+border-color: transparent;  
+}
+
+.twitter-small {
+height: 20px; 
+vertical-align: middle;
+margin-left: 3px;
+}
+
+.twitter-small .social {
+ fill: #fff;
+ 
+}
+
+@media (min-width: 1500px) {
+.container {
+  width: 1200px;
+}
+
+.image-container,
+.wishes-container {
+    width: 600px;
+}
+}
+
+@media (max-width: 1380px) {
+h1 {
+   font-size: 3rem;
+}
+}
+
+@media (max-width: 1200px) {
+h1 {
+   font-size: 2.1rem;
+}
+}
+
+@media (max-width: 768px) {
+.image-container, .wishes-container {
+   width: 100%;
+}
+
+.container {
+  display: block;
+}
+}
